@@ -31,18 +31,21 @@ def main():
     parser.add_argument(
         "model_path",
         type=Path,
+        default="tulip-B-15-224.ckpt.onnx",
         help="Path to model file (.pt, .ckpt, .onnx, .engine)"
     )
     
     parser.add_argument(
         "model_backend",
         choices=["torch", "ort", "trt"],
+        default="ort",
         help="Inference backend: torch=PyTorch, ort=ONNX Runtime, trt=TensorRT"
     )
     
     parser.add_argument(
         "embedding_dict",
         type=Path,
+        default="data_dict.pt",
         help="Path to precomputed embedding dictionary"
     )
     

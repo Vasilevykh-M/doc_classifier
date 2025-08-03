@@ -69,6 +69,18 @@ pip install -r requirements.txt
 ~~~
 Из Docker
 
+Билд
+~~~
+docker build -t cuda-app .
+~~~
+Запуск
+~~~
+docker run -itd --gpus all --name my-cuda-app cuda-app
+~~~
+Подключение
+~~~
+docker exec -it my-cuda-app bash
+~~~
 
 ### Распознавание страны
 ~~~

@@ -18,6 +18,14 @@
 UZB, BEL, BGR, BLR, CAN, CHL, DOM, ESP, EST, GBR, HUN, IDN, IRL, ITA, KAZ, KGZ, MDA, MEX, NLD, POL, SVK, SWE, USA
 
 # Архитектура системы
+
+```mermaid
+	graph LR
+	A[Входное изображение] --> B[Векторные представления]
+	B --> C[Кластеризация по классам (CAC)]
+	C --> D[Определение страны]
+```
+
 Решение объединяет два современных подхода:
 
 Кодирование изображений: Использует [OpenCLIP](https://github.com/tulip-berkeley/open_clip) (модификация где шло обучения в задачах image vs image text vs text image vs text, что позволяет эффективно использовать image encider в данной задаче) для извлечения визуальных признаков
@@ -57,11 +65,25 @@ UZB, BEL, BGR, BLR, CAN, CHL, DOM, ESP, EST, GBR, HUN, IDN, IRL, ITA, KAZ, KGZ, 
 | Валидационный | 23 страны | 100% |
 
 # Использование
-Локально
+### Установка зависимостей
+#### Локально
 ~~~
 pip install -r requirements.txt
 ~~~
-Из Docker
+
+#### Из Docker
+Билд
+~~~
+docker build -t cuda-app .
+~~~
+Запуск
+~~~
+docker run -itd --gpus all --name my-cuda-app cuda-app
+~~~
+Подключение
+~~~
+docker exec -it my-cuda-app bash
+~~~
 
 ### Обучение модели
 ~~~

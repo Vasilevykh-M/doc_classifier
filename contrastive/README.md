@@ -22,7 +22,7 @@ UZB, BEL, BGR, BLR, CAN, CHL, DOM, ESP, EST, GBR, HUN, IDN, IRL, ITA, KAZ, KGZ, 
 ```mermaid
 	graph LR
 	A[Входное изображение] --> B[Векторные представления]
-	B --> C[Кластеризация по классам (CAC)]
+	B --> C[Кластеризация по классам CAC]
 	C --> D[Определение страны]
 ```
 

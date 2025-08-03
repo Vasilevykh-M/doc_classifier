@@ -17,9 +17,9 @@ RUN apt-get update && \
 # Создаем рабочую директорию
 WORKDIR /app
 RUN git clone https://github.com/Vasilevykh-M/doc_classifier.git
-RUN cd doc_classifier
-RUN git fetch origin
-RUN git checkout origin/ocr
-RUN cd ocr
-RUN python3.10 -m pip install --no-cache-dir -r requirements.txt
+RUN cd doc_classifier && \
+    git fetch origin && \
+    git checkout origin/ocr && \
+    cd ocr && \
+    python3.11 -m pip install --no-cache-dir -r requirements.txt
 CMD ["tail", "-f", "/dev/null"]

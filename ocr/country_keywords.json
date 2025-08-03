@@ -1,0 +1,27 @@
+{
+    "BEL": ["bel", "belgium", "belgique", "belgien", "belgie"],
+    "BGR": ["bgr", "bulgaria"],
+    "BLR": ["belarus"],
+    "CAN": ["can", "canada"],
+    "CHL": ["chl", "chile"],
+    "DEU": ["d"],
+    "DOM": ["dom", "dominicana"],
+    "ESP": ["esp", "espana"],
+    "EST": ["est", "eesti", "estonia"],
+    "GBR": ["gbr", "britain"],
+    "HUN": ["hun", "magyarorsag"],
+    "IDN": ["idn", "indonesia"],
+    "IRL": ["irl", "ireland"],
+    "ITA": ["ita"],
+    "KAZ": ["kaz"],
+    "KGZ": ["kgz"],
+    "MDA": ["mda"],
+    "MEX": ["mexicanos"],
+    "NLD": ["nld"],
+    "POL": ["pol"],
+    "SVK": ["svk"],
+    "SWE": ["swe"],
+    "USA": ["usa"],
+    "UZB": ["uzb"]
+
+}

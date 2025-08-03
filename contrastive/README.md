@@ -102,7 +102,7 @@ python train.py \
 python build_dict.py \
   путь/к/обученной_модели.pt \
   torch \
-  путь/к/словарю.pkl \
+  путь/к/словарю.pb \
   путь/к/данным_для_словаря
 ~~~
 
@@ -111,7 +111,7 @@ python build_dict.py \
 python evaluate.py \
   путь/к/обученной_модели.pt \
   ort \
-  путь/к/словарю.pkl \
+  путь/к/словарю.pb \
   путь/к/тестовым/данным \
   --countries UZB KAZ KGZ RUS
   ~~~
@@ -122,7 +122,7 @@ python evaluate.py \
 python predict.py \
   путь/к/обученной_модели.pt \
   trt \
-  путь/к/словарю.pkl \
+  путь/к/словарю.pb \
   путь/к/изображению.jpg
 ~~~
 

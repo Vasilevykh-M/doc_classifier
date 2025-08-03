@@ -63,12 +63,12 @@ graph TD;
 # Использование
 
 ### Установка зависимостей
-Локально
+#### Локально
 ~~~
 pip install -r requirements.txt
 ~~~
-Из Docker
 
+#### Из Docker
 Билд
 ~~~
 docker build -t cuda-app .
